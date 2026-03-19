@@ -1,0 +1,27 @@
+# Root .gitignore so we don't accidentally commit generated artifacts
+# (node_modules/bin/obj) or the assignment database (.sqlite).
+
+**/node_modules/
+**/dist/
+**/bin/
+**/obj/
+
+# SQLite assignment database files should not be committed.
+**/*.sqlite
+**/*.sqlite-wal
+**/*.sqlite-shm
+
+# VS/Editor
+.vscode/
+.idea/
+*.suo
+
+# Root npm lock (this repo uses frontend/package-lock.json instead)
+package-lock.json
+
+# Visual Studio / solution cache
+**/.vs/
+**/*.slnx
+**/*.csproj.user
+
+
