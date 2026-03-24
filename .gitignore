@@ -1,14 +1,10 @@
 # Root .gitignore so we don't accidentally commit generated artifacts
-# (node_modules/bin/obj). The assignment SQLite file lives under backend/Mission10/Mission10/
-# and is tracked in git; ignore SQLite journal files only.
+# (node_modules/bin/obj).
 
 **/node_modules/
 **/dist/
 **/bin/
 **/obj/
-
-**/*.sqlite-wal
-**/*.sqlite-shm
 
 # VS/Editor
 .vscode/
