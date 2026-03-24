@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup Condition="Exists('BowlingLeague.sqlite')">
+    <Content Include="BowlingLeague.sqlite" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
